@@ -1,0 +1,81 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #2a2a2a;
+}
+
+#emulator-container {
+  position: relative;
+  background-color: #000;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#gba-screen {
+  width: 240px;
+  height: 160px;
+  background-color: #000;
+}
+
+#controls {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  gap: 5px;
+}
+
+button {
+  background-color: #ff6f61;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+button:hover {
+  background-color: #e65c4f;
+}
+
+#menu {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+#help-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
